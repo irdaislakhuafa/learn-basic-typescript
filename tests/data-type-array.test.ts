@@ -5,5 +5,14 @@ describe('array', function () {
 
 		console.log(names)
 		console.log(values)
+
+	})
+	
+	it("must readonly array", function () {		
+		let roArray: ReadonlyArray<number> = [1, 2, 3]
+		console.log(`readonly array: ${roArray}`)
+
+		// roArray[0] = 0 // error because read only
+		// roArray = [1, 2] // success
 	})
 })

@@ -1,7 +1,7 @@
 {
   "include": [
     "src/**/*",
-    "test/**/*"
+    "tests/**/*"
   ],
   "exclude": [
     // "test/**/*.test.ts"
