@@ -7,6 +7,8 @@ describe('type alias', () => {
 			name: "Laptop"
 		}
 
+		category.id = 1 // success because type is alias of union string | number
+
 		const product: Product = {
 			id: "1",
 			name: "ThinkPad X1 Nano",

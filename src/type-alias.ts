@@ -1,12 +1,15 @@
+// type alias with union
+type ID = string | number
+
 type Category = {
-	id: string;
+	id: ID;
 	name: string;
 }
 
-export { Category };
+export { Category, ID };
 
 export type Product = {
-	id: string;
+	id: ID;
 	name: string;
 	price: number;
 	category: Category;
