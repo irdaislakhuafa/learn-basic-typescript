@@ -7,6 +7,8 @@ describe('interface', () => {
 			name: "blabla",
 		}
 
+		// use readonly id
+		// seller.id = 2 // error
 		console.log("seller:", seller)
 	})
 })
