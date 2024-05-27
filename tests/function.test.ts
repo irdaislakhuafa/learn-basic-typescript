@@ -8,4 +8,16 @@ describe('function', () => {
 		printHello()
 		printHello("irda")
 	})
+
+	it('must support rest parameter', () => {
+		const sum = (...values: number[]): number => {
+			let result: number = 0;
+			for (const v of values) {
+				result += v
+			}
+			return result
+		}
+
+		expect(sum(1, 1, 1, 1, 1)).toBe(5)
+	})
 })
