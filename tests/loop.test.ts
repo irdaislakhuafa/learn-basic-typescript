@@ -44,4 +44,21 @@ describe('loop', () => {
 
 		expect(counter).toBe(10)
 	})
+
+	it('break and continue', () => {
+		let counter: number = 0;
+
+		do {
+			counter++
+			if (counter >= 10) {
+				break
+			}
+
+			if (counter % 2 == 0) {
+				continue
+			}
+
+			console.log(counter)
+		} while (true)
+	})
 })
