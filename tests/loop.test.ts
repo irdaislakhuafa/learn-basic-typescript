@@ -35,4 +35,13 @@ describe('loop', () => {
 
 		expect(counter).toBe(10)
 	})
+
+	it('do while loop', () => {
+		let counter: number = 0;
+		do {
+			counter++;
+		} while (counter < 10)
+
+		expect(counter).toBe(10)
+	})
 })
