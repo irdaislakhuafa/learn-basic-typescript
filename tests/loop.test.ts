@@ -26,4 +26,13 @@ describe('loop', () => {
 		})
 		console.log('')
 	})
+
+	it('while loop', () => {
+		let counter: number = 0
+		while (counter < 10) {
+			counter++
+		}
+
+		expect(counter).toBe(10)
+	})
 })
